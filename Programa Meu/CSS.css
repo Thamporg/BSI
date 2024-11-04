@@ -43,12 +43,12 @@ body {
     
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(71, 66, 64);
-    background-color: #f7f7f7;
-    background-image: url(https://i.pinimg.com/736x/bf/95/34/bf953419d76bf747cba69b55e6e03957.jpg);
+    background-color: white;
+    background-image: url(https://www.pngplay.com/wp-content/uploads/11/Pikachu-Pokemon-Transparent-Images.png);
     background-repeat: no-repeat;
-    background-size: 250px;
+    background-size: 400px;
     background-attachment: fixed;
-    background-position-x: left;
+    background-position-x: -90px;
     background-position-y: bottom;
     
 }
