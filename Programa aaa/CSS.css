@@ -1,0 +1,143 @@
+style
+
+h1, h2 {
+    text-align: left;
+}
+
+h1 {
+    font-size: 32px;
+}
+p {
+    font-size: 18px;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-right: 16%;
+    margin-bottom: 1px;
+}
+h3{
+    text-align: justify;
+}
+img {
+    min-height: 15%;
+    max-height: 250px;
+    text-align: center;
+}
+
+main .container img {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.descricao {
+    font-family: Arial, sans-serif;
+}
+
+.descricao h2 {
+    margin: 0;
+    color: #333;
+}
+
+.descricao p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+main li {
+    font-size: 18px;
+    margin-bottom: -16px;
+    margin-right: 20%;
+}
+main div li {
+    list-style: none;
+    margin-top: 10px;
+    margin-right: 0%;
+}
+
+main div li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+nav {
+    padding: 4px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f4f4f9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    
+}
+
+nav ul li a:hover {
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #002C42;
+    border-radius: 50px;
+}
+
+/* Container principal */
+.container {
+    display: flex; /* Coloca o sidebar e o conteúdo lado a lado */
+    min-height: 100vh; /* Altura mínima de 100% da tela */
+}
+
+/* Sidebar (container lateral) */
+.sidebar {
+    width: 250px; /* Largura fixa da sidebar */
+    background-color: #005377;
+    color: white;
+    padding: 20px;
+}
+
+/* Estilo dos links do menu */
+
+.sidebar h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.sidebar h3 {
+    font-size: 15px;
+    text-align: center;
+    margin-top: -25px;
+}
+
+/*.sidebar ul {
+    list-style: none;  //Remove os marcadores
+}*/
+
+.sidebar ul li {
+    margin-bottom: 5px;
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white;
+    font-size: 16px;
+}
+
+.content {
+    flex: 1; /* Ocupa o espaço restante */
+    background-color: #fff;
+    padding: 20px;
+}
