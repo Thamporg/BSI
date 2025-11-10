@@ -1,0 +1,44 @@
+# ***Exercícios de Lista:***
+
+1. Crie a classe Vetor com todos métodos vistos neste estudo e com um atributo do tipo array de Aluno inicializado com 100.000 posições.
+	public class Vetor {
+	
+	private Aluno[] alunos = new Aluno[100000];
+
+	public void adiciona(Aluno aluno)
+	public void adiciona(int posicao, Aluno aluno)
+	public Aluno pega(int posicao)
+	public void remove(int posicao)
+	public boolean contem(Aluno aluno)
+	public int tamanho()
+	public String toString()
+	}
+
+2. Escreva os testes unitários para todos os métodos. (Main)
+
+3. Implemente o método Adiciona(Aluno), como vimos inicialmente, passado por todo o array buscando um espaço vazio.
+
+4. Faça um teste para calcular o tempo gasto com o método Adiciona(Aluno) (questão Anterior). Este teste deve adicionar 100.000 alunos. Execute e marque o tempo.
+
+5. Implemente o método Adiciona(Aluno)no modelo compactado a esquerda. Não esqueça de acrescentar o atributo totalDeAlunos.
+
+6. Faça um teste para calcular o tempo gasto com o método Adiciona(Aluno) (questão Anterior). Este teste deve adicionar 100000 alunos. Execute e marque o tempo. Compare com o tempo obtido na questão 4.
+
+7. Acrescente um novo método para a Lista, que deve remover todas as ocorrências de um elemento que é passado com parâmetro. Não esqueça de rearranjar os elementos do vetor após a remoção.
+	public void remove(Object objeto)
+
+8. Acrescente um novo método para a Lista, que deve limpar a lista, ou seja, remover todos os elementos.
+	public void clear()
+
+9. Acrescente um novo método para a Lista, que deve procurar o índice da primeira ocorrência de um elemento passado como parâmetro.
+	public int indexOf(Object objeto)
+
+10. Acrescente um novo método para a Lista, que deve procurar o índice da última ocorrência de um elemento passado como parâmetro.
+	public int lastIndexOf(Object objeto)
+
+11. Acrescente um novo método para a Lista, que deve procurar o índice da ocorrência de um elemento passados como parâmetros. Deve ser passado o Objeto a ser procurado e o numero da ocorrência do objeto na lista.
+	public int indexOf(Object objeto, int ocorrencia)
+
+12. Implemente a classe Vetor para objetos (Genérico) com os métodos e atributos vistos na questão 1.
+
+13. Implemente uma lista de alunos utilizando ArrayList.
