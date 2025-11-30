@@ -48,6 +48,61 @@ public class Vetor {
         }
     }
 
+    //questão 7
+    public void remove(Object objeto) {
+        for (int i=0; i<totalDeAlunos; i++) {
+            if (this.alunos[i].equals(objeto)) {
+                for (int j=i;j<totalDeAlunos;j++){
+                    this.alunos[j] = this.alunos[j+1];
+                }
+                this.alunos[totalDeAlunos - 1] = null;
+                totalDeAlunos--;
+            }
+        }
+    }
+
+    //questão 8
+    public void clear(){
+        for (int i=0;i<this.alunos.length;i++) {
+            alunos[i] = null;
+        }
+        totalDeAlunos = 0;
+    }
+
+    //questão 9
+    public int indexOf(Object objeto) {
+        for (int i=0;i<this.alunos.length;i++) {
+            if (this.alunos[i].equals(objeto)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    //questão 10
+    public int lastIndexOf(Object objeto){
+        for (int i=this.alunos.length;i>0;i--) {
+            if (this.alunos[i].equals(objeto)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    //questão 11
+    public int indexOf(Object objeto, int ocorrencia){
+        int vezesQueOcorreu = 1;
+        for (int i=0;i<this.alunos.length;i++){
+            if (this.alunos[i].equals(objeto) && vezesQueOcorreu == ocorrencia) {
+                return i;
+            }
+            else if(this.alunos[i].equals(objeto) && vezesQueOcorreu != ocorrencia) {
+                vezesQueOcorreu++;
+            }
+        }
+        return -1;
+    }
+
 	public boolean contem(Aluno aluno) {
         for (int i=0;i<this.totalDeAlunos; i++) {
             if (this.alunos[i].getNome().equalsIgnoreCase(aluno.getNome())) {return true;}
@@ -151,3 +206,6 @@ public class Vetor {
     }
 
 }
+
+
+/* Questões feitas: 1, 2, 3, 4, 7, 8, 9, 10, 11  */
